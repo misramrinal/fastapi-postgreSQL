@@ -1,20 +1,16 @@
 # fastapi-postgreSQL
 
-## A backend database made with PostGRE SQL using FastAPI which can perform basic CRUD operatiions
+A backend database made with PostGRE SQL using FastAPI which can perform basic CRUD operatiions on two databases, named questions and choices. the questions database stored the question id(primary key), and the question string while the choices table stores the choice id(primary key), the list of choices, a boolean value whether the choice is true or false, and a question id(forign key from the questions table)
 
 ## Installation
-### In order to use this package, go through the following steps:
+### In order to use this package, go inside the folder named fastapi_postgresql inside the parent folder:
 
-Open Commant Prompt
-```bash
-cd fastapi_postgresql
-```
 After that start the FastAPI by using the following command:
 ```bash
 uvicorn main:app --reload
 ```
-## To run in docker:
-### In order to create a container of this in docker:
+## To run in docker go back to the parent folder
+### In order to create a container of this in docker and run it:
 ```bash
 docker-compose build
 docker-compose up
